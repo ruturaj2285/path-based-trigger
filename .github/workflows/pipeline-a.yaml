@@ -1,0 +1,14 @@
+name: Pipeline A
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "service-a/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Pipeline A triggered"
